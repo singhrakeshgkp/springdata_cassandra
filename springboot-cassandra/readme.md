@@ -13,6 +13,7 @@
  - Follow below steps to check if cassandra is running
    - copy cassandra container id. use ``` docker ps ``` command to check container id
    - command to connect to running container ``` docker exec -it 7e428ad186b4 bash ```  ```exit ``` command can be use to come out form cqlsh pag.
+   - command to connect to container and run query ``` docker exec -it cassandra bash -c "cqlsh -u cassandra -p cassandra"```
  - Use below command to run the application in same network where cassandra is running
    ```
    docker run --network=springboot-cassandra --name springboot-cassandra -p 7171:7171 -d springboot-cassandra.jar
