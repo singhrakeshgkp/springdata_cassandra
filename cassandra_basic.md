@@ -8,7 +8,7 @@
 ## Keyspace
 - Keyspaces contain tables, materialized views and user-defined types, functions and aggregates fore more visit datastack official website
 - commands
-   -  ```describe keyspaces``` it list down the available key spaces
+   -  this command ```describe keyspaces``` is used to list down the available key spaces
    -  Create Keyspace
      ```
       CREATE KEYSPACE demo_keys
@@ -32,6 +32,11 @@
    Note :- create table <name space>.<table name>, here country is partition key
   ```
 ### DML
+- Insert statement
+  ```
+      INSERT INTO demo_keys.employee_by_country (country,email,first_name,last_name,age)
+      VALUES('US', 'rakesh@email.com', 'rakesh','singh',22);
+  ```
 
 
   
