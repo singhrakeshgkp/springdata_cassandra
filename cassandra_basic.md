@@ -1,4 +1,6 @@
 # Table of contents
+- Installation
+   - [Install in docker container](#install-in-docker-container)
 - [Keyspace](#keyspace)
 - [Operations](#operations)
    - [DDL](#ddl)
