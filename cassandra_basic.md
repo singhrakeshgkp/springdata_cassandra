@@ -8,7 +8,8 @@
    - [DML](#dml)
 - [Commands](#commands)
 ## Install in docker container
-- ```docker pull cassandra:latest```
+- ```docker pull cassandra:3.11```
+- ```docker run -p 9042:9042 --rm --name cassandra -d cassandra:3.11```
 - ```docker run --rm -d --name cassandra --hostname cassandra cassandra```
 - ```docker exec -it cassandra bash -c "cqlsh -u cassandra -p cassandra"```
 
