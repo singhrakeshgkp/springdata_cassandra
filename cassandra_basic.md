@@ -6,7 +6,10 @@
    - [DDL](#ddl)
    - [DML](#dml)
 - [Commands](#commands)
-
+## Install in docker container]
+- ```docker pull cassandra:latest```
+- ```docker run --rm -d --name cassandra --hostname cassandra cassandra```
+- ```docker exec -it cassandra bash -c "cqlsh -u cassandra -p cassandra"```
 ## Keyspace
 - Keyspaces contain tables, materialized views and user-defined types, functions and aggregates fore more visit datastack official website
 - commands
