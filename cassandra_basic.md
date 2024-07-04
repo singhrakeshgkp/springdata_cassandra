@@ -1,4 +1,5 @@
 # Table of contents
+- [Common info](#common-info)
 - Installation
    - [Install in docker container](#install-in-docker-container)
    - [Install in macos](#install-in-mac-os)
@@ -7,6 +8,9 @@
    - [DDL](#ddl)
    - [DML](#dml)
 - [Commands](#commands)
+
+## Common Info
+- Cassandra is master less(peer-to-peer architecture)
 ## Install in docker container
 - ```docker pull cassandra:3.11```
 - ```docker run -p 9042:9042 --rm --name cassandra -d cassandra:3.11```
