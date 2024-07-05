@@ -11,6 +11,9 @@
 
 ## Common Info
 - Cassandra is master less(peer-to-peer architecture)
+  ### References
+  - https://www.youtube.com/watch?v=WFycRMLvMKc
+  - 
 ## Install in docker container
 - ```docker pull cassandra:3.11```
 - ```docker run -p 9042:9042 --rm --name cassandra -d cassandra:3.11```
