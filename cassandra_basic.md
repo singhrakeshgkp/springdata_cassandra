@@ -7,6 +7,9 @@
 - [Operations](#operations)
    - [DDL](#ddl)
    - [DML](#dml)
+- [Partitions](#partitions)
+   - [Single Row Partitions](#single-row-partitions)
+   - [Multi Row Partitions](#single-row-partitions)
 - [Commands](#commands)
 
 ## Common Info
@@ -49,7 +52,19 @@
     age smallint,
     PRIMARY KEY ((country), email)
    );
-   Note :- create table <name space>.<table name>, here country is partition key
+   Note :- Here country is partition key.
+  ```
+  ```
+  create table name(
+   column1 type [static]
+   column2 type [static]
+  ...
+  )
+  primary key ((column,...), column,...)
+  with clustering order by ( colustering-column[ASC|DESC], ...
+  ));
+  Note--> here first part (column,...) is partition key and column,... is clustering columns
+  --> we use clustering column for two perpose. First to ensure enigquiness if partition key is not enough. Second To stablish sorting order.
   ```
 ### DML
 - Insert statement
@@ -57,6 +72,27 @@
       INSERT INTO demo_keys.employee_by_country (country,email,first_name,last_name,age)
       VALUES('US', 'rakesh@email.com', 'rakesh','singh',22);
   ```
-
+## Parititions
+### Single Row Paritions
+```
+ create table employee(
+   id UUID,
+   name Text,
+   primary key(id)
+  )
+```
+- In above table(employee) id column is the partition key which is universally unique, that means we can have as much partition as employee. if u have millions of employee u will have millions of partitions.
+### Multi Row Partitions
+```
+ create table employee(
+   id UUID,
+   name Text,
+   city Text,
+   joiningYear Text,
+   salary Text,
+   primary key((city,joiningYear),salary)
+  )
+```
+- in this table we have defined composite partition key with column city and joiningYear. Employee with same city but different joining year will be allocated different partition. 
 
   
