@@ -72,8 +72,8 @@
       INSERT INTO demo_keys.employee_by_country (country,email,first_name,last_name,age)
       VALUES('US', 'rakesh@email.com', 'rakesh','singh',22);
   ```
-## Parititions
-### Single Row Paritions
+## Partitions
+### Single Row Partitions
 ```
  create table employee(
    id UUID,
