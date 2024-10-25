@@ -72,6 +72,18 @@
       INSERT INTO demo_keys.employee_by_country (country,email,first_name,last_name,age)
       VALUES('US', 'rakesh@email.com', 'rakesh','singh',22);
   ```
+- Select statement
+    ```
+     select         selectors
+     from           table name
+     where          primary key condition
+                    AND index conditions
+     group by       primary key columns
+     order by       cluster key column(ASC|DESC)
+     limit          N
+     allow filtering ;
+    Note using ALLOW FILTERING is very bad pratice, it forces cassandra to go and perform full cluster scan to find the data.       
+    ```
 ## Partitions
 ### Single Row Partitions
 ```
