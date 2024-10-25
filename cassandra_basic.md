@@ -76,13 +76,14 @@
     ```
      select         selectors
      from           table name
-     where          primary key condition
+     where          primary key condition(partition key or partition key + clustering key)
                     AND index conditions
      group by       primary key columns
      order by       cluster key column(ASC|DESC)
      limit          N
      allow filtering ;
-    Note using ALLOW FILTERING is very bad pratice, it forces cassandra to go and perform full cluster scan to find the data.       
+    Note using ALLOW FILTERING is very bad pratice, it forces cassandra to go and perform full cluster scan to find the data.
+    using allow filtering we can use data column instead of primary key column(partition column) in where clause.      
     ```
 ## Partitions
 ### Single Row Partitions
