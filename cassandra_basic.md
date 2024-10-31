@@ -10,7 +10,7 @@
 - [Partitions](#partitions)
    - [Single Row Partitions](#single-row-partitions)
    - [Multi Row Partitions](#single-row-partitions)
-- [Data Modeling Methology](#data-modeling-methology)
+- [Data Modeling Methodlogy](#data-modeling-methodlogy)
 - [Commands](#commands)
 
 ## Common Info
@@ -108,13 +108,14 @@
   )
 ```
 - in this table we have defined composite partition key with column city and joiningYear. Employee with same city but different joining year will be allocated different partition. 
-## Data Modeling Methology
+## Data Modeling Methodlogy
 - Collection and analysis of **data requirements**.
 - Identification of participating **Entities And Relationalships**
 - Identification of **Data Access Patterns**
 - A particular way of **Organizing And Structuring** data
 - Design and pecification of a **Database Schema**
 - Schema **Optimization** and data **Indexing** technique
+- [Diagram]((/data-modeling.png))
 ```
 Data qualities --> Completenes, Consistency, Accuracy
 Data access ----> Queryability, Efficiency, Scalability
