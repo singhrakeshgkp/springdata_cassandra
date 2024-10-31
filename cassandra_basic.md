@@ -11,6 +11,7 @@
    - [Single Row Partitions](#single-row-partitions)
    - [Multi Row Partitions](#single-row-partitions)
 - [Data Modeling Methodlogy](#data-modeling-methodlogy)
+- [Datastax vs Cassandra](#datastax-vs-cassandra)
 - [Commands](#commands)
 
 ## Common Info
@@ -125,5 +126,8 @@ Data access ----> Queryability, Efficiency, Scalability
 - For Data modeling example refer datastax official website
    - https://www.youtube.com/watch?v=u6pKIrfJgkU
    - https://www.datastax.com/learn/data-modeling-by-example/sensor-data-model#conceptual
-   - 
+ 
+## Datastax vs Cassandra
+- They can both be used in production. DataStax Enterprise comes with a bunch of extra features on top of Apache Cassandra, and also comes with support.
+- For more details click [here](https://stackoverflow.com/questions/24564725/apache-cassandra-vs-datastax-cassandra)
   
