@@ -10,7 +10,7 @@
 - [Partitions](#partitions)
    - [Single Row Partitions](#single-row-partitions)
    - [Multi Row Partitions](#single-row-partitions)
-- [Data Modeling Methology](# data-modeling-methology)
+- [Data Modeling Methology](#data-modeling-methology)
 - [Commands](#commands)
 
 ## Common Info
