@@ -116,11 +116,7 @@
 - Design and pecification of a **Database Schema**
 - Schema **Optimization** and data **Indexing** technique
 - [Diagram](/data-modeling.png)
-
 <img src="/data-modeling.png" width="800"/>
-<p align="center">
-  <img src="/data-modeling.png" width="350" alt="accessibility text">
-</p>
 
 ```
 Data qualities --> Completenes, Consistency, Accuracy
