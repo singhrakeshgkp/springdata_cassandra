@@ -17,7 +17,6 @@ public class Book {
 
 	@PrimaryKey
 	UUID id;
-	
 	private String title;
 	private String description;
 	private String author;

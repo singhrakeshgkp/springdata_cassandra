@@ -33,6 +33,7 @@ public class BookController {
 	public ResponseEntity<Book> addBook(@RequestBody Book book){
 		log.info("BookController.addBook() start");
 		try {
+
 			Book _book = repository.save(new Book(Uuids.timeBased(), book.getTitle(), book.getDescription(), book.getAuthor()));
 			log.info("BookController.addBook() data saved in cassandra db with id {}",_book.getId());
 			return new ResponseEntity<>(_book,HttpStatus.CREATED);
