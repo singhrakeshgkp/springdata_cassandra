@@ -119,5 +119,8 @@
 Data qualities --> Completenes, Consistency, Accuracy
 Data access ----> Queryability, Efficiency, Scalability
 ```
-- 
+- For Data modeling example refer datastax official website
+   - https://www.youtube.com/watch?v=u6pKIrfJgkU
+   - https://www.datastax.com/learn/data-modeling-by-example/sensor-data-model#conceptual
+   - 
   
