@@ -115,7 +115,7 @@
 - A particular way of **Organizing And Structuring** data
 - Design and pecification of a **Database Schema**
 - Schema **Optimization** and data **Indexing** technique
-- [Diagram]((/data-modeling.png))
+- [Diagram](/data-modeling.png)
 ```
 Data qualities --> Completenes, Consistency, Accuracy
 Data access ----> Queryability, Efficiency, Scalability
